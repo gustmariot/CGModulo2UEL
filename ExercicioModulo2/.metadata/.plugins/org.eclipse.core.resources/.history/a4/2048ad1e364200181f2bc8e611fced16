@@ -1,0 +1,16 @@
+/*
+ * Main.cpp
+ *
+ *  Created on: 17/04/2018
+ *      Author: gustavo
+ */
+
+int zoomIn(){
+
+	return 1;
+}
+
+
+int main(){
+	return 1;
+}

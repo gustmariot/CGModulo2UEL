@@ -1,0 +1,1147 @@
+
+**** Build of configuration Debug for project NiveisCinza ****
+
+Nothing to build for project NiveisCinza
+12:27:39 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int nivelCinza()’:
+../src/main.cpp:31:14: error: incompatible types in assignment of ‘float’ to ‘float [3]’
+    pixel.val = gray;
+              ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+12:28:16 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_imgproc
+./src/main.o: na função `nivelCinza()':
+/home/gustavo/Dropbox/4Ano/CG/ExercicioModulo1/NiveisCinza/Debug/../src/main.cpp:15: referência indefinida para `cv::imread(cv::String const&, int)'
+/home/gustavo/Dropbox/4Ano/CG/ExercicioModulo1/NiveisCinza/Debug/../src/main.cpp:36: referência indefinida para `cv::imwrite(cv::String const&, cv::_InputArray const&, std::vector<int, std::allocator<int> > const&)'
+./src/main.o: na função `cv::String::String(char const*)':
+/usr/local/include/opencv2/core/cvstd.hpp:602: referência indefinida para `cv::String::allocate(unsigned long)'
+./src/main.o: na função `cv::String::~String()':
+/usr/local/include/opencv2/core/cvstd.hpp:648: referência indefinida para `cv::String::deallocate()'
+./src/main.o: na função `cv::Mat::~Mat()':
+/usr/local/include/opencv2/core/mat.inl.hpp:704: referência indefinida para `cv::fastFree(void*)'
+./src/main.o: na função `cv::Mat::operator=(cv::Mat const&)':
+/usr/local/include/opencv2/core/mat.inl.hpp:725: referência indefinida para `cv::Mat::copySize(cv::Mat const&)'
+./src/main.o: na função `cv::Mat::release()':
+/usr/local/include/opencv2/core/mat.inl.hpp:816: referência indefinida para `cv::Mat::deallocate()'
+collect2: error: ld returned 1 exit status
+makefile:45: recipe for target 'NiveisCinza' failed
+make: *** [NiveisCinza] Error 1
+12:29:19 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui
+./src/main.o: na função `nivelCinza()':
+/home/gustavo/Dropbox/4Ano/CG/ExercicioModulo1/NiveisCinza/Debug/../src/main.cpp:15: referência indefinida para `cv::imread(cv::String const&, int)'
+makefile:45: recipe for target 'NiveisCinza' failed
+/home/gustavo/Dropbox/4Ano/CG/ExercicioModulo1/NiveisCinza/Debug/../src/main.cpp:36: referência indefinida para `cv::imwrite(cv::String const&, cv::_InputArray const&, std::vector<int, std::allocator<int> > const&)'
+./src/main.o: na função `cv::String::String(char const*)':
+/usr/local/include/opencv2/core/cvstd.hpp:602: referência indefinida para `cv::String::allocate(unsigned long)'
+./src/main.o: na função `cv::String::~String()':
+/usr/local/include/opencv2/core/cvstd.hpp:648: referência indefinida para `cv::String::deallocate()'
+./src/main.o: na função `cv::Mat::~Mat()':
+/usr/local/include/opencv2/core/mat.inl.hpp:704: referência indefinida para `cv::fastFree(void*)'
+./src/main.o: na função `cv::Mat::operator=(cv::Mat const&)':
+/usr/local/include/opencv2/core/mat.inl.hpp:725: referência indefinida para `cv::Mat::copySize(cv::Mat const&)'
+./src/main.o: na função `cv::Mat::release()':
+/usr/local/include/opencv2/core/mat.inl.hpp:816: referência indefinida para `cv::Mat::deallocate()'
+collect2: error: ld returned 1 exit status
+make: *** [NiveisCinza] Error 1
+12:29:48 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_imgproc
+./src/main.o: na função `nivelCinza()':
+/home/gustavo/Dropbox/4Ano/CG/ExercicioModulo1/NiveisCinza/Debug/../src/main.cpp:15: referência indefinida para `cv::imread(cv::String const&, int)'
+/home/gustavo/Dropbox/4Ano/CG/ExercicioModulo1/NiveisCinza/Debug/../src/main.cpp:36: referência indefinida para `cv::imwrite(cv::String const&, cv::_InputArray const&, std::vector<int, std::allocator<int> > const&)'
+./src/main.o: na função `cv::String::String(char const*)':
+/usr/local/include/opencv2/core/cvstd.hpp:602: referência indefinida para `cv::String::allocate(unsigned long)'
+./src/main.o: na função `cv::String::~String()':
+/usr/local/include/opencv2/core/cvstd.hpp:648: referência indefinida para `cv::String::deallocate()'
+./src/main.o: na função `cv::Mat::~Mat()':
+/usr/local/include/opencv2/core/mat.inl.hpp:704: referência indefinida para `cv::fastFree(void*)'
+./src/main.o: na função `cv::Mat::operator=(cv::Mat const&)':
+/usr/local/include/opencv2/core/mat.inl.hpp:725: referência indefinida para `cv::Mat::copySize(cv::Mat const&)'
+./src/main.o: na função `cv::Mat::release()':
+/usr/local/include/opencv2/core/mat.inl.hpp:816: referência indefinida para `cv::Mat::deallocate()'
+makefile:45: recipe for target 'NiveisCinza' failed
+collect2: error: ld returned 1 exit status
+make: *** [NiveisCinza] Error 1
+12:31:11 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc
+/usr/bin/ld: ./src/main.o: referência indefinida ao símbolo '_ZN2cv6String10deallocateEv'
+//usr/local/lib/libopencv_core.so.3.4: error adding symbols: DSO missing from command line
+makefile:45: recipe for target 'NiveisCinza' failed
+collect2: error: ld returned 1 exit status
+make: *** [NiveisCinza] Error 1
+12:31:39 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs -lopencv_imgproc
+Finished building target: NiveisCinza
+ 
+12:31:53 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+12:32:04 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+make: Nothing to be done for 'all'.
+12:32:31 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+12:33:28 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:33:01 **** Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:34:49 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:35:02 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+make: Nothing to be done for 'all'.
+10:36:29 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:39:07 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:39:28 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:40:33 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:41:19 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:41:37 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:42:44 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:47:02 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:47:40 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int nivelCinza()’:
+../src/main.cpp:29:20: error: no match for ‘operator+’ (operand types are ‘const char [8]’ and ‘cv::Vec3f {aka cv::Vec<float, 3>}’)
+    printf("PIXEL: "+pixel);
+                    ^
+In file included from /usr/local/include/opencv2/core/base.hpp:58:0,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/core/core.hpp:48,
+                 from ../src/main.cpp:9:
+/usr/local/include/opencv2/core/cvstd.hpp:959:8: note: candidate: cv::String cv::operator+(const cv::String&, const cv::String&)
+ String operator + (const String& lhs, const String& rhs)
+        ^
+/usr/local/include/opencv2/core/cvstd.hpp:959:8: note:   no known conversion for argument 2 from ‘cv::Vec3f {aka cv::Vec<float, 3>}’ to ‘const cv::String&’
+/usr/local/include/opencv2/core/cvstd.hpp:969:8: note: candidate: cv::String cv::operator+(const cv::String&, const char*)
+ String operator + (const String& lhs, const char* rhs)
+        ^
+/usr/local/include/opencv2/core/cvstd.hpp:969:8: note:   no known conversion for argument 2 from ‘cv::Vec3f {aka cv::Vec<float, 3>}’ to ‘const char*’
+/usr/local/include/opencv2/core/cvstd.hpp:980:8: note: candidate: cv::String cv::operator+(const char*, const cv::String&)
+ String operator + (const char* lhs, const String& rhs)
+        ^
+/usr/local/include/opencv2/core/cvstd.hpp:980:8: note:   no known conversion for argument 2 from ‘cv::Vec3f {aka cv::Vec<float, 3>}’ to ‘const cv::String&’
+/usr/local/include/opencv2/core/cvstd.hpp:991:8: note: candidate: cv::String cv::operator+(const cv::String&, char)
+ String operator + (const String& lhs, char rhs)
+        ^
+/usr/local/include/opencv2/core/cvstd.hpp:991:8: note:   no known conversion for argument 2 from ‘cv::Vec3f {aka cv::Vec<float, 3>}’ to ‘char’
+/usr/local/include/opencv2/core/cvstd.hpp:1001:8: note: candidate: cv::String cv::operator+(char, const cv::String&)
+ String operator + (char lhs, const String& rhs)
+        ^
+/usr/local/include/opencv2/core/cvstd.hpp:1001:8: note:   no known conversion for argument 2 from ‘cv::Vec3f {aka cv::Vec<float, 3>}’ to ‘const cv::String&’
+In file included from /usr/local/include/opencv2/core.hpp:3260:0,
+                 from /usr/local/include/opencv2/core/core.hpp:48,
+                 from ../src/main.cpp:9:
+/usr/local/include/opencv2/core/cvstd.inl.hpp:124:8: note: candidate: cv::String cv::operator+(const cv::String&, const string&)
+ String operator + (const String& lhs, const std::string& rhs)
+        ^
+/usr/local/include/opencv2/core/cvstd.inl.hpp:124:8: note:   no known conversion for argument 2 from ‘cv::Vec3f {aka cv::Vec<float, 3>}’ to ‘const string& {aka const std::__cxx11::basic_string<char>&}’
+/usr/local/include/opencv2/core/cvstd.inl.hpp:135:8: note: candidate: cv::String cv::operator+(const string&, const cv::String&)
+ String operator + (const std::string& lhs, const String& rhs)
+        ^
+/usr/local/include/opencv2/core/cvstd.inl.hpp:135:8: note:   no known conversion for argument 2 from ‘cv::Vec3f {aka cv::Vec<float, 3>}’ to ‘const cv::String&’
+In file included from /usr/local/include/opencv2/core.hpp:57:0,
+                 from /usr/local/include/opencv2/core/core.hpp:48,
+                 from ../src/main.cpp:9:
+/usr/local/include/opencv2/core/matx.hpp:1206:17: note: candidate: template<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator+(const cv::Matx<_Tp, m, n>&, const cv::Matx<_Tp, m, n>&)
+ Matx<_Tp, m, n> operator + (const Matx<_Tp, m, n>& a, const Matx<_Tp, m, n>& b)
+                 ^
+/usr/local/include/opencv2/core/matx.hpp:1206:17: note:   template argument deduction/substitution failed:
+../src/main.cpp:29:21: note:   mismatched types ‘const cv::Matx<_Tp, m, n>’ and ‘const char [8]’
+    printf("PIXEL: "+pixel);
+                     ^
+In file included from /usr/local/include/opencv2/core.hpp:57:0,
+                 from /usr/local/include/opencv2/core/core.hpp:48,
+                 from ../src/main.cpp:9:
+/usr/local/include/opencv2/core/matx.hpp:1334:14: note: candidate: template<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator+(const cv::Vec<_Tp, m>&, const cv::Vec<_Tp, m>&)
+ Vec<_Tp, cn> operator + (const Vec<_Tp, cn>& a, const Vec<_Tp, cn>& b)
+              ^
+/usr/local/include/opencv2/core/matx.hpp:1334:14: note:   template argument deduction/substitution failed:
+../src/main.cpp:29:21: note:   mismatched types ‘const cv::Vec<_Tp, m>’ and ‘const char [8]’
+    printf("PIXEL: "+pixel);
+                     ^
+In file included from /usr/local/include/opencv2/core.hpp:58:0,
+                 from /usr/local/include/opencv2/core/core.hpp:48,
+                 from ../src/main.cpp:9:
+/usr/local/include/opencv2/core/types.hpp:1006:14: note: candidate: template<class _Tp> cv::Complex<_Tp> cv::operator+(const cv::Complex<_Tp>&, const cv::Complex<_Tp>&)
+ Complex<_Tp> operator + (const Complex<_Tp>& a, const Complex<_Tp>& b)
+              ^
+/usr/local/include/opencv2/core/types.hpp:1006:14: note:   template argument deduction/substitution failed:
+../src/main.cpp:29:21: note:   mismatched types ‘const cv::Complex<_Tp>’ and ‘const char [8]’
+    printf("PIXEL: "+pixel);
+                     ^
+In file included from /usr/local/include/opencv2/core.hpp:58:0,
+                 from /usr/local/include/opencv2/core/core.hpp:48,
+                 from ../src/main.cpp:9:
+/usr/local/include/opencv2/core/types.hpp:1056:14: note: candidate: template<class _Tp> cv::Complex<_Tp> cv::operator+(const cv::Complex<_Tp>&, _Tp)
+ Complex<_Tp> operator + (const Complex<_Tp>& a, _Tp b)
+              ^
+/usr/local/include/opencv2/core/types.hpp:1056:14: note:   template argument deduction/substitution failed:
+../src/main.cpp:29:21: note:   mismatched types ‘const cv::Complex<_Tp>’ and ‘const char [8]’
+    printf("PIXEL: "+pixel);
+                     ^
+In file included from /usr/local/include/opencv2/core.hpp:58:0,
+                 from /usr/local/include/opencv2/core/core.hpp:48,
+                 from ../src/main.cpp:9:
+/usr/local/include/opencv2/core/types.hpp:1066:14: note: candidate: template<class _Tp> cv::Complex<_Tp> cv::operator+(_Tp, const cv::Complex<_Tp>&)
+ Complex<_Tp> operator + (_Tp b, const Complex<_Tp>& a)
+              ^
+/usr/local/include/opencv2/core/types.hpp:1066:14: note:   template argument deduction/substitution failed:
+../src/main.cpp:29:21: note:   ‘cv::Vec3f {aka cv::Vec<float, 3>}’ is not derived from ‘const cv::Complex<_Tp>’
+    printf("PIXEL: "+pixel);
+                     ^
+In file included from /usr/local/include/opencv2/core.hpp:58:0,
+                 from /usr/local/include/opencv2/core/core.hpp:48,
+                 from ../src/main.cpp:9:
+/usr/local/include/opencv2/core/types.hpp:1287:13: note: candidate: template<class _Tp> cv::Point_<_Tp> cv::operator+(const cv::Point_<_Tp>&, const cv::Point_<_Tp>&)
+ Point_<_Tp> operator + (const Point_<_Tp>& a, const Point_<_Tp>& b)
+             ^
+/usr/local/include/opencv2/core/types.hpp:1287:13: note:   template argument deduction/substitution failed:
+../src/main.cpp:29:21: note:   mismatched types ‘const cv::Point_<_Tp>’ and ‘const char [8]’
+    printf("PIXEL: "+pixel);
+                     ^
+In file included from /usr/local/include/opencv2/core.hpp:58:0,
+                 from /usr/local/include/opencv2/core/core.hpp:48,
+                 from ../src/main.cpp:9:
+/usr/local/include/opencv2/core/types.hpp:1539:14: note: candidate: template<class _Tp> cv::Point3_<_Tp> cv::operator+(const cv::Point3_<_Tp>&, const cv::Point3_<_Tp>&)
+ Point3_<_Tp> operator + (const Point3_<_Tp>& a, const Point3_<_Tp>& b)
+              ^
+/usr/local/include/opencv2/core/types.hpp:1539:14: note:   template argument deduction/substitution failed:
+../src/main.cpp:29:21: note:   mismatched types ‘const cv::Point3_<_Tp>’ and ‘const char [8]’
+    printf("PIXEL: "+pixel);
+                     ^
+In file included from /usr/local/include/opencv2/core.hpp:58:0,
+                 from /usr/local/include/opencv2/core/core.hpp:48,
+                 from ../src/main.cpp:9:
+/usr/local/include/opencv2/core/types.hpp:1719:12: note: candidate: template<class _Tp> cv::Size_<_Tp> cv::operator+(const cv::Size_<_Tp>&, const cv::Size_<_Tp>&)
+ Size_<_Tp> operator + (const Size_<_Tp>& a, const Size_<_Tp>& b)
+            ^
+/usr/local/include/opencv2/core/types.hpp:1719:12: note:   template argument deduction/substitution failed:
+../src/main.cpp:29:21: note:   mismatched types ‘const cv::Size_<_Tp>’ and ‘const char [8]’
+    printf("PIXEL: "+pixel);
+                     ^
+In file included from /usr/local/include/opencv2/core.hpp:58:0,
+                 from /usr/local/include/opencv2/core/core.hpp:48,
+                 from ../src/main.cpp:9:
+/usr/local/include/opencv2/core/types.hpp:1915:12: note: candidate: template<class _Tp> cv::Rect_<_Tp> cv::operator+(const cv::Rect_<_Tp>&, const cv::Point_<_Tp>&)
+ Rect_<_Tp> operator + (const Rect_<_Tp>& a, const Point_<_Tp>& b)
+            ^
+/usr/local/include/opencv2/core/types.hpp:1915:12: note:   template argument deduction/substitution failed:
+../src/main.cpp:29:21: note:   mismatched types ‘const cv::Rect_<_Tp>’ and ‘const char [8]’
+    printf("PIXEL: "+pixel);
+                     ^
+In file included from /usr/local/include/opencv2/core.hpp:58:0,
+                 from /usr/local/include/opencv2/core/core.hpp:48,
+                 from ../src/main.cpp:9:
+/usr/local/include/opencv2/core/types.hpp:1927:12: note: candidate: template<class _Tp> cv::Rect_<_Tp> cv::operator+(const cv::Rect_<_Tp>&, const cv::Size_<_Tp>&)
+ Rect_<_Tp> operator + (const Rect_<_Tp>& a, const Size_<_Tp>& b)
+            ^
+/usr/local/include/opencv2/core/types.hpp:1927:12: note:   template argument deduction/substitution failed:
+../src/main.cpp:29:21: note:   mismatched types ‘const cv::Rect_<_Tp>’ and ‘const char [8]’
+    printf("PIXEL: "+pixel);
+                     ^
+In file included from /usr/local/include/opencv2/core.hpp:58:0,
+                 from /usr/local/include/opencv2/core/core.hpp:48,
+                 from ../src/main.cpp:9:
+/usr/local/include/opencv2/core/types.hpp:2042:7: note: candidate: cv::Range cv::operator+(const cv::Range&, int)
+ Range operator + (const Range& r1, int delta)
+       ^
+/usr/local/include/opencv2/core/types.hpp:2042:7: note:   no known conversion for argument 1 from ‘const char [8]’ to ‘const cv::Range&’
+/usr/local/include/opencv2/core/types.hpp:2048:7: note: candidate: cv::Range cv::operator+(int, const cv::Range&)
+ Range operator + (int delta, const Range& r1)
+       ^
+/usr/local/include/opencv2/core/types.hpp:2048:7: note:   no known conversion for argument 2 from ‘cv::Vec3f {aka cv::Vec<float, 3>}’ to ‘const cv::Range&’
+/usr/local/include/opencv2/core/types.hpp:2182:14: note: candidate: template<class _Tp> cv::Scalar_<_Tp> cv::operator+(const cv::Scalar_<_Tp>&, const cv::Scalar_<_Tp>&)
+ Scalar_<_Tp> operator + (const Scalar_<_Tp>& a, const Scalar_<_Tp>& b)
+              ^
+/usr/local/include/opencv2/core/types.hpp:2182:14: note:   template argument deduction/substitution failed:
+../src/main.cpp:29:21: note:   mismatched types ‘const cv::Scalar_<_Tp>’ and ‘const char [8]’
+    printf("PIXEL: "+pixel);
+                     ^
+In file included from /usr/local/include/opencv2/core.hpp:59:0,
+                 from /usr/local/include/opencv2/core/core.hpp:48,
+                 from ../src/main.cpp:9:
+/usr/local/include/opencv2/core/mat.hpp:3552:20: note: candidate: cv::MatExpr cv::operator+(const cv::Mat&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator + (const Mat& a, const Mat& b);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:3552:20: note:   no known conversion for argument 1 from ‘const char [8]’ to ‘const cv::Mat&’
+/usr/local/include/opencv2/core/mat.hpp:3553:20: note: candidate: cv::MatExpr cv::operator+(const cv::Mat&, const Scalar&)
+ CV_EXPORTS MatExpr operator + (const Mat& a, const Scalar& s);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:3553:20: note:   no known conversion for argument 1 from ‘const char [8]’ to ‘const cv::Mat&’
+/usr/local/include/opencv2/core/mat.hpp:3554:20: note: candidate: cv::MatExpr cv::operator+(const Scalar&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator + (const Scalar& s, const Mat& a);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:3554:20: note:   no known conversion for argument 1 from ‘const char [8]’ to ‘const Scalar& {aka const cv::Scalar_<double>&}’
+/usr/local/include/opencv2/core/mat.hpp:3555:20: note: candidate: cv::MatExpr cv::operator+(const cv::MatExpr&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator + (const MatExpr& e, const Mat& m);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:3555:20: note:   no known conversion for argument 1 from ‘const char [8]’ to ‘const cv::MatExpr&’
+/usr/local/include/opencv2/core/mat.hpp:3556:20: note: candidate: cv::MatExpr cv::operator+(const cv::Mat&, const cv::MatExpr&)
+ CV_EXPORTS MatExpr operator + (const Mat& m, const MatExpr& e);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:3556:20: note:   no known conversion for argument 1 from ‘const char [8]’ to ‘const cv::Mat&’
+/usr/local/include/opencv2/core/mat.hpp:3557:20: note: candidate: cv::MatExpr cv::operator+(const cv::MatExpr&, const Scalar&)
+ CV_EXPORTS MatExpr operator + (const MatExpr& e, const Scalar& s);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:3557:20: note:   no known conversion for argument 1 from ‘const char [8]’ to ‘const cv::MatExpr&’
+/usr/local/include/opencv2/core/mat.hpp:3558:20: note: candidate: cv::MatExpr cv::operator+(const Scalar&, const cv::MatExpr&)
+ CV_EXPORTS MatExpr operator + (const Scalar& s, const MatExpr& e);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:3558:20: note:   no known conversion for argument 1 from ‘const char [8]’ to ‘const Scalar& {aka const cv::Scalar_<double>&}’
+/usr/local/include/opencv2/core/mat.hpp:3559:20: note: candidate: cv::MatExpr cv::operator+(const cv::MatExpr&, const cv::MatExpr&)
+ CV_EXPORTS MatExpr operator + (const MatExpr& e1, const MatExpr& e2);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:3559:20: note:   no known conversion for argument 1 from ‘const char [8]’ to ‘const cv::MatExpr&’
+In file included from /usr/local/include/opencv2/core/mat.hpp:3659:0,
+                 from /usr/local/include/opencv2/core.hpp:59,
+                 from /usr/local/include/opencv2/core/core.hpp:48,
+                 from ../src/main.cpp:9:
+/usr/local/include/opencv2/core/mat.inl.hpp:2741:18: note: candidate: cv::MatConstIterator cv::operator+(const cv::MatConstIterator&, ptrdiff_t)
+ MatConstIterator operator + (const MatConstIterator& a, ptrdiff_t ofs)
+                  ^
+/usr/local/include/opencv2/core/mat.inl.hpp:2741:18: note:   no known conversion for argument 1 from ‘const char [8]’ to ‘const cv::MatConstIterator&’
+/usr/local/include/opencv2/core/mat.inl.hpp:2748:18: note: candidate: cv::MatConstIterator cv::operator+(ptrdiff_t, const cv::MatConstIterator&)
+ MatConstIterator operator + (ptrdiff_t ofs, const MatConstIterator& a)
+                  ^
+/usr/local/include/opencv2/core/mat.inl.hpp:2748:18: note:   no known conversion for argument 2 from ‘cv::Vec3f {aka cv::Vec<float, 3>}’ to ‘const cv::MatConstIterator&’
+/usr/local/include/opencv2/core/mat.inl.hpp:2889:24: note: candidate: template<class _Tp> cv::MatConstIterator_<_Tp> cv::operator+(const cv::MatConstIterator_<_Tp>&, ptrdiff_t)
+ MatConstIterator_<_Tp> operator + (const MatConstIterator_<_Tp>& a, ptrdiff_t ofs)
+                        ^
+/usr/local/include/opencv2/core/mat.inl.hpp:2889:24: note:   template argument deduction/substitution failed:
+../src/main.cpp:29:21: note:   mismatched types ‘const cv::MatConstIterator_<_Tp>’ and ‘const char [8]’
+    printf("PIXEL: "+pixel);
+                     ^
+In file included from /usr/local/include/opencv2/core/mat.hpp:3659:0,
+                 from /usr/local/include/opencv2/core.hpp:59,
+                 from /usr/local/include/opencv2/core/core.hpp:48,
+                 from ../src/main.cpp:9:
+/usr/local/include/opencv2/core/mat.inl.hpp:2896:24: note: candidate: template<class _Tp> cv::MatConstIterator_<_Tp> cv::operator+(ptrdiff_t, const cv::MatConstIterator_<_Tp>&)
+ MatConstIterator_<_Tp> operator + (ptrdiff_t ofs, const MatConstIterator_<_Tp>& a)
+                        ^
+/usr/local/include/opencv2/core/mat.inl.hpp:2896:24: note:   template argument deduction/substitution failed:
+../src/main.cpp:29:21: note:   cannot convert ‘"PIXEL: "’ (type ‘const char [8]’) to type ‘ptrdiff_t {aka long int}’
+    printf("PIXEL: "+pixel);
+                     ^
+In file included from /usr/local/include/opencv2/core/mat.hpp:3659:0,
+                 from /usr/local/include/opencv2/core.hpp:59,
+                 from /usr/local/include/opencv2/core/core.hpp:48,
+                 from ../src/main.cpp:9:
+/usr/local/include/opencv2/core/mat.inl.hpp:3026:19: note: candidate: template<class _Tp> cv::MatIterator_<_Tp> cv::operator+(const cv::MatIterator_<_Tp>&, ptrdiff_t)
+ MatIterator_<_Tp> operator + (const MatIterator_<_Tp>& a, ptrdiff_t ofs)
+                   ^
+/usr/local/include/opencv2/core/mat.inl.hpp:3026:19: note:   template argument deduction/substitution failed:
+../src/main.cpp:29:21: note:   mismatched types ‘const cv::MatIterator_<_Tp>’ and ‘const char [8]’
+    printf("PIXEL: "+pixel);
+                     ^
+In file included from /usr/local/include/opencv2/core/mat.hpp:3659:0,
+                 from /usr/local/include/opencv2/core.hpp:59,
+                 from /usr/local/include/opencv2/core/core.hpp:48,
+                 from ../src/main.cpp:9:
+/usr/local/include/opencv2/core/mat.inl.hpp:3033:19: note: candidate: template<class _Tp> cv::MatIterator_<_Tp> cv::operator+(ptrdiff_t, const cv::MatIterator_<_Tp>&)
+ MatIterator_<_Tp> operator + (ptrdiff_t ofs, const MatIterator_<_Tp>& a)
+                   ^
+/usr/local/include/opencv2/core/mat.inl.hpp:3033:19: note:   template argument deduction/substitution failed:
+../src/main.cpp:29:21: note:   cannot convert ‘"PIXEL: "’ (type ‘const char [8]’) to type ‘ptrdiff_t {aka long int}’
+    printf("PIXEL: "+pixel);
+                     ^
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:49:22 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int nivelCinza()’:
+../src/main.cpp:29:30: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘double’ [-Wformat=]
+    printf("%d\n",pixel.val[0]);
+                              ^
+../src/main.cpp:30:30: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘double’ [-Wformat=]
+    printf("%d\n",pixel.val[1]);
+                              ^
+../src/main.cpp:31:30: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘double’ [-Wformat=]
+    printf("%d\n",pixel.val[2]);
+                              ^
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:50:07 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:51:02 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:51:11 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int nivelCinza()’:
+../src/main.cpp:29:43: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘double’ [-Wformat=]
+    printf("%d\n",img.at<Vec3f>(1,1).val[0]);
+                                           ^
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:52:40 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int nivelCinza()’:
+../src/main.cpp:29:44: warning: format ‘%lf’ expects argument of type ‘double’, but argument 2 has type ‘int’ [-Wformat=]
+    printf("%lf\n",img.at<Vec3b>(1,1).val[0]);
+                                            ^
+../src/main.cpp:30:31: warning: format ‘%lf’ expects argument of type ‘double’, but argument 2 has type ‘int’ [-Wformat=]
+    printf("%lf\n",pixel.val[1]);
+                               ^
+../src/main.cpp:31:31: warning: format ‘%lf’ expects argument of type ‘double’, but argument 2 has type ‘int’ [-Wformat=]
+    printf("%lf\n",pixel.val[2]);
+                               ^
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:53:28 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:54:18 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:54:48 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:55:36 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int nivelCinza()’:
+../src/main.cpp:35:32: warning: format ‘%f’ expects argument of type ‘double’, but argument 2 has type ‘int’ [-Wformat=]
+    printf("GRAY: %.2f\n\n",gray);
+                                ^
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:55:49 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int nivelCinza()’:
+../src/main.cpp:35:32: warning: format ‘%f’ expects argument of type ‘double’, but argument 2 has type ‘int’ [-Wformat=]
+    printf("GRAY: %.2f\n\n",gray);
+                                ^
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:56:07 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:57:13 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:57:26 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+make: Nothing to be done for 'all'.
+10:58:11 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int nivelCinza()’:
+../src/main.cpp:33:8: warning: unused variable ‘gray’ [-Wunused-variable]
+    int gray = (r + g + b) / 3;
+        ^
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:58:49 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int nivelCinza()’:
+../src/main.cpp:33:8: warning: unused variable ‘gray’ [-Wunused-variable]
+    int gray = (r + g + b) / 3;
+        ^
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:59:16 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+11:10:28 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int nivelCinzaCte(int)’:
+../src/main.cpp:69:88: error: invalid operands of types ‘const char*’ and ‘const char [5]’ to binary ‘operator+’
+   imwrite( "/home/gustavo/Dropbox/4Ano/CG/ExercicioModulo1/NiveisCinza/NivelCinza"+cte+".jpg", img);
+                                                                                        ^
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:14:55 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int nivelCinzaCte(int)’:
+../src/main.cpp:69:88: error: request for member ‘to_string’ in ‘cte’, which is of non-class type ‘int’
+   imwrite( "/home/gustavo/Dropbox/4Ano/CG/ExercicioModulo1/NiveisCinza/NivelCinza"+cte.to_string+".jpg", img);
+                                                                                        ^
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:23:19 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int nivelCinzaCte(int)’:
+../src/main.cpp:71:3: error: ‘string’ was not declared in this scope
+   string s = to_string(cte);
+   ^
+../src/main.cpp:71:3: note: suggested alternatives:
+In file included from /usr/include/c++/5/iosfwd:39:0,
+                 from /usr/include/c++/5/ios:38,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../src/main.cpp:8:
+/usr/include/c++/5/bits/stringfwd.h:74:33: note:   ‘std::__cxx11::string’
+   typedef basic_string<char>    string;   
+                                 ^
+/usr/include/c++/5/bits/stringfwd.h:74:33: note:   ‘std::__cxx11::string’
+../src/main.cpp:73:88: error: invalid operands of types ‘const char*’ and ‘const char [5]’ to binary ‘operator+’
+   imwrite( "/home/gustavo/Dropbox/4Ano/CG/ExercicioModulo1/NiveisCinza/NivelCinza"+cte+".jpg", img);
+                                                                                        ^
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:27:01 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int nivelCinzaCte(int)’:
+../src/main.cpp:73:32: error: invalid operands of types ‘const char*’ and ‘const char [5]’ to binary ‘operator+’
+   imwrite( "../NivelCinza"+cte+".jpg", img);
+                                ^
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:27:29 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int nivelCinzaCte(int)’:
+../src/main.cpp:73:32: error: request for member ‘str’ in ‘cte’, which is of non-class type ‘int’
+   imwrite( "../NivelCinza"+cte.str()+".jpg", img);
+                                ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+11:28:25 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int nivelCinzaCte(int)’:
+../src/main.cpp:73:41: error: ‘to_string’ was not declared in this scope
+   imwrite( "../NivelCinza"+to_string(cte)+".jpg", img);
+                                         ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+11:29:34 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+11:30:20 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int nivelCinzaCte(int)’:
+../src/main.cpp:74:38: warning: too many arguments for format [-Wformat-extra-args]
+   printf("../NivelCinza",saida,".jpg");
+                                      ^
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+11:30:32 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int nivelCinzaCte(int)’:
+../src/main.cpp:74:38: warning: too many arguments for format [-Wformat-extra-args]
+   printf("../NivelCinza",saida,".jpg");
+                                      ^
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+11:31:46 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int nivelCinzaCte(int)’:
+../src/main.cpp:75:22: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘std::__cxx11::string* {aka std::__cxx11::basic_string<char>*}’ [-Wformat=]
+   printf("%s\n",saida);
+                      ^
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+11:32:25 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int nivelCinzaCte(int)’:
+../src/main.cpp:75:22: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘std::__cxx11::string* {aka std::__cxx11::basic_string<char>*}’ [-Wformat=]
+   printf("%s\n",saida);
+                      ^
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+11:32:42 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+make: Nothing to be done for 'all'.
+11:32:46 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+make: Nothing to be done for 'all'.
+11:33:02 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int nivelCinzaCte(int)’:
+../src/main.cpp:75:3: error: ‘cout’ was not declared in this scope
+   cout << saida;
+   ^
+../src/main.cpp:75:3: note: suggested alternative:
+In file included from ../src/main.cpp:8:0:
+/usr/include/c++/5/iostream:61:18: note:   ‘std::cout’
+   extern ostream cout;  /// Linked to standard output
+                  ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+11:33:10 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+11:33:36 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+11:34:23 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+11:35:36 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+11:36:43 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+11:38:25 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+18:30:22 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+18:32:03 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+19:28:58 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+19:29:38 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+19:30:08 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+19:30:27 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+19:32:18 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+19:33:15 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+19:33:43 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+19:35:31 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:24:00 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function ‘int HSV(int)’:
+../src/main.cpp:181:8: warning: unused variable ‘H’ [-Wunused-variable]
+    int H = pixel[0];
+        ^
+../src/main.cpp:182:8: warning: unused variable ‘S’ [-Wunused-variable]
+    int S = pixel[1];
+        ^
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+/usr/bin/ld: ./src/main.o: referência indefinida ao símbolo '_ZN2cv8cvtColorERKNS_11_InputArrayERKNS_12_OutputArrayEii'
+//usr/local/lib/libopencv_imgproc.so.3.4: error adding symbols: DSO missing from command line
+collect2: error: ld returned 1 exit status
+make: *** [NiveisCinza] Error 1
+makefile:45: recipe for target 'NiveisCinza' failed
+10:27:35 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building file: ../src/main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_highgui -lopencv_features2d -lopencv_core -lopencv_imgcodecs
+/usr/bin/ld: ./src/main.o: referência indefinida ao símbolo '_ZN2cv8cvtColorERKNS_11_InputArrayERKNS_12_OutputArrayEii'
+//usr/local/lib/libopencv_imgproc.so.3.4: error adding symbols: DSO missing from command line
+collect2: error: ld returned 1 exit status
+makefile:45: recipe for target 'NiveisCinza' failed
+make: *** [NiveisCinza] Error 1
+10:27:59 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+Building target: NiveisCinza
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "NiveisCinza"  ./src/main.o   -lopencv_imgproc -lopencv_highgui -lopencv_core -lopencv_imgcodecs
+Finished building target: NiveisCinza
+ 
+10:28:05 **** Incremental Build of configuration Debug for project NiveisCinza ****
+make all 
+make: Nothing to be done for 'all'.

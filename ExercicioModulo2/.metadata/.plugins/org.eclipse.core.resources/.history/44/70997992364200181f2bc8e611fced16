@@ -1,0 +1,32 @@
+/*
+ * Main.cpp
+ *
+ *  Created on: 17/04/2018
+ *      Author: gustavo
+ */
+
+
+#include <iostream>
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <string>
+#include <opencv2/imgproc/imgproc.hpp>
+using namespace cv;
+using namespace std;
+
+int zoomIn(){
+	Mat img;
+	img = imread("../lena.jpg", CV_LOAD_IMAGE_COLOR);
+	if(!img){
+		cout << "Image not found";
+	}
+	else{
+		cout << "find";
+	}
+	return 1;
+}
+
+
+int main(){
+	return 1;
+}

@@ -1,0 +1,43 @@
+/*
+ * Main.cpp
+ *
+ *  Created on: 17/04/2018
+ *      Author: gustavo
+ */
+
+
+#include <iostream>
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <string>
+#include <opencv2/imgproc/imgproc.hpp>
+using namespace cv;
+using namespace std;
+
+int zoomIn(){
+	Mat img;
+	img = imread("./lena.jpg", CV_LOAD_IMAGE_COLOR);
+	if(!img.data){
+		cout << "Image not found";
+	}
+	for(int i=0; i<img.rows; i++){
+		for(int j=0; j<img.cols; j++){
+			Vec3b pixel1 = img.at<Vec3b>(i, j);
+			int r1 = pixel1[2];
+			int g1 = pixel1[1];
+			int b1 = pixel1[0];
+
+			if(i%2 == 0){
+
+			}
+		}
+	}
+
+	return 1;
+}
+
+
+int main(){
+	zoomIn();
+	return 1;
+}

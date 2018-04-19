@@ -1,0 +1,5 @@
+https://stackoverflow.com/questions/12335848/opencv-program-compile-error-libopencv-core-so-2-4-cannot-open-shared-object-f (usado para corrigir um erro de biblioteca)
+
+https://docs.opencv.org/2.4/doc/tutorials/introduction/linux_install/linux_install.html (tutorial usado para instalar o opencv)
+
+

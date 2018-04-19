@@ -1,0 +1,172 @@
+08:51:50 **** Build of configuration Debug for project Modulo2 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.d" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Modulo2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "Modulo2"  ./src/Main.o   -lopencv_core -lopencv_imgcodecs
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: na função `_start':
+(.text+0x20): referência indefinida para `main'
+collect2: error: ld returned 1 exit status
+make: *** [Modulo2] Error 1
+makefile:45: recipe for target 'Modulo2' failed
+08:52:18 **** Incremental Build of configuration Debug for project Modulo2 ****
+make all 
+Building target: Modulo2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "Modulo2"  ./src/Main.o   -lopencv_core -lopencv_imgproc -lopencv_imgcodecs
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: na função `_start':
+(.text+0x20): referência indefinida para `main'
+collect2: error: ld returned 1 exit status
+makefile:45: recipe for target 'Modulo2' failed
+make: *** [Modulo2] Error 1
+08:52:38 **** Incremental Build of configuration Debug for project Modulo2 ****
+make all 
+Building target: Modulo2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "Modulo2"  ./src/Main.o   -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_imgcodecs
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: na função `_start':
+(.text+0x20): referência indefinida para `main'
+collect2: error: ld returned 1 exit status
+make: *** [Modulo2] Error 1
+makefile:45: recipe for target 'Modulo2' failed
+08:52:59 **** Incremental Build of configuration Debug for project Modulo2 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.d" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Modulo2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "Modulo2"  ./src/Main.o   -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_imgcodecs
+Finished building target: Modulo2
+ 
+08:53:13 **** Incremental Build of configuration Debug for project Modulo2 ****
+make all 
+Building target: Modulo2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "Modulo2"  ./src/Main.o   -lopencv_core -lopencv_imgproc -lopencv_imgcodecs
+Finished building target: Modulo2
+ 
+08:55:06 **** Incremental Build of configuration Debug for project Modulo2 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.d" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Modulo2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "Modulo2"  ./src/Main.o   -lopencv_core -lopencv_imgproc -lopencv_imgcodecs
+Finished building target: Modulo2
+ 
+08:57:37 **** Incremental Build of configuration Debug for project Modulo2 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.d" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp: In function ‘int zoomIn()’:
+../src/Main.cpp:20:5: error: no match for ‘operator!’ (operand type is ‘cv::Mat’)
+  if(!img){
+     ^
+../src/Main.cpp:20:5: note: candidate: operator!(bool) <built-in>
+../src/Main.cpp:20:5: note:   no known conversion for argument 1 from ‘cv::Mat’ to ‘bool’
+In file included from /usr/local/include/opencv2/core.hpp:58:0,
+                 from /usr/local/include/opencv2/core/core.hpp:48,
+                 from ../src/Main.cpp:10:
+/usr/local/include/opencv2/core/types.hpp:2021:6: note: candidate: bool cv::operator!(const cv::Range&)
+ bool operator !(const Range& r)
+      ^
+/usr/local/include/opencv2/core/types.hpp:2021:6: note:   no known conversion for argument 1 from ‘cv::Mat’ to ‘const cv::Range&’
+make: *** [src/Main.o] Error 1
+src/subdir.mk:18: recipe for target 'src/Main.o' failed
+08:58:01 **** Incremental Build of configuration Debug for project Modulo2 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.d" -o "src/Main.o" "../src/Main.cpp"
+../src/Main.cpp: In function ‘int zoomIn()’:
+../src/Main.cpp:20:8: error: could not convert ‘img’ from ‘cv::Mat’ to ‘bool’
+  if(img){
+        ^
+src/subdir.mk:18: recipe for target 'src/Main.o' failed
+make: *** [src/Main.o] Error 1
+08:58:27 **** Incremental Build of configuration Debug for project Modulo2 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.d" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Modulo2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "Modulo2"  ./src/Main.o   -lopencv_core -lopencv_imgproc -lopencv_imgcodecs
+Finished building target: Modulo2
+ 
+08:58:33 **** Incremental Build of configuration Debug for project Modulo2 ****
+make all 
+make: Nothing to be done for 'all'.
+08:58:44 **** Incremental Build of configuration Debug for project Modulo2 ****
+make all 
+make: Nothing to be done for 'all'.
+08:58:50 **** Incremental Build of configuration Debug for project Modulo2 ****
+make all 
+make: Nothing to be done for 'all'.
+08:59:01 **** Incremental Build of configuration Debug for project Modulo2 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.d" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Modulo2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "Modulo2"  ./src/Main.o   -lopencv_core -lopencv_imgproc -lopencv_imgcodecs
+Finished building target: Modulo2
+ 
+08:59:34 **** Incremental Build of configuration Debug for project Modulo2 ****
+make all 
+make: Nothing to be done for 'all'.
+08:59:49 **** Incremental Build of configuration Debug for project Modulo2 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.d" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Modulo2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "Modulo2"  ./src/Main.o   -lopencv_core -lopencv_imgproc -lopencv_imgcodecs
+Finished building target: Modulo2
+ 
+08:59:54 **** Incremental Build of configuration Debug for project Modulo2 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.d" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Modulo2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "Modulo2"  ./src/Main.o   -lopencv_core -lopencv_imgproc -lopencv_imgcodecs
+Finished building target: Modulo2
+ 
+09:00:02 **** Incremental Build of configuration Debug for project Modulo2 ****
+make all 
+Building file: ../src/Main.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Main.d" -MT"src/Main.d" -o "src/Main.o" "../src/Main.cpp"
+Finished building: ../src/Main.cpp
+ 
+Building target: Modulo2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "Modulo2"  ./src/Main.o   -lopencv_core -lopencv_imgproc -lopencv_imgcodecs
+Finished building target: Modulo2
+ 
+09:00:20 **** Incremental Build of configuration Debug for project Modulo2 ****
+make all 
+make: Nothing to be done for 'all'.

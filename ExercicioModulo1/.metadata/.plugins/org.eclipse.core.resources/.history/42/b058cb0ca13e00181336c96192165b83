@@ -1,0 +1,172 @@
+/*
+ * Main.cpp
+ *
+ *  Created on: 11/04/2018
+ *      Author: gustavo
+ */
+
+#include <iostream>
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <string>
+using namespace cv;
+
+int alterarLuminancia(int cte) {
+	Mat img;
+	img = imread("../lena.jpg", CV_LOAD_IMAGE_COLOR);
+	if (!img.data) {
+		printf("No image data \n");
+		return -1;
+	}
+	for (int i = 0; i < img.rows; i++) {
+		for (int j = 0; j < img.cols; j++) {
+			Vec3b pixel = img.at<Vec3b>(i, j);
+			int r = pixel[2];
+			int g = pixel[1];
+			int b = pixel[0];
+
+			int Y = (0.3 * r) + (0.59 * g)
+					+ (0.11 * b);
+			int Cr = (0.7 * r) - (0.59 * g)
+					- (0.11 * b);
+			int Cb = (0.3 * r) + (0.59 * g)
+					- (0.89 * b);
+
+			Y += cte;
+
+			r = Y + Cr;
+			g = Y - 0.51 * Cb;
+			b = Y + Cb;
+
+			if (r > 255)
+				r = 255;
+			else if (r < 0)
+				r = 0;
+
+			if (g > 255)
+				g = 255;
+			else if (g < 0)
+				g = 0;
+
+			if (b > 255)
+				b = 255;
+			else if (b < 0)
+				b = 0;
+
+			pixel[2] = r;
+			pixel[1] = g;
+			pixel[0] = b;
+
+			img.at<Vec3b>(i, j) = pixel;
+		}
+	}
+
+	std::stringstream s;
+	s << cte;
+	std::string saida = "./Luminancia" + s.str() + ".jpg";
+
+	imwrite(saida, img);
+
+	return 1;
+}
+
+int nivelCinza() {
+	Mat img;
+	img = imread("../lena.jpg", CV_LOAD_IMAGE_COLOR);
+	if (!img.data) {
+		printf("No image data \n");
+		return -1;
+	}
+	for (int i = 0; i < img.rows; i++) {
+		for (int j = 0; j < img.cols; j++) {
+			Vec3b pixel = img.at<Vec3b>(i, j);
+			int r = pixel[2];
+			int g = pixel[1];
+			int b = pixel[0];
+			int gray = (r + g + b) / 3;
+
+			pixel[0] = gray;
+			pixel[1] = gray;
+			pixel[2] = gray;
+
+			img.at<Vec3b>(i, j) = pixel;
+		}
+	}
+	imwrite("./NivelCinza.jpg", img);
+	return 1;
+}
+
+int nivelCinzaCte(int cte) {
+	Mat img;
+	img = imread("../lena.jpg", CV_LOAD_IMAGE_COLOR);
+	if (!img.data) {
+		printf("No image data \n");
+		return -1;
+	}
+	for (int i = 0; i < img.rows; i++) {
+		for (int j = 0; j < img.cols; j++) {
+			Vec3b pixel = img.at<Vec3b>(i, j);
+			int r = pixel[2];
+			int g = pixel[1];
+			int b = pixel[0];
+			int gray = (r + g + b) / 3;
+
+			int newGray = gray + cte;
+
+			if (newGray > 255)
+				newGray = 255;
+			else if (newGray < 0)
+				newGray = 0;
+
+			pixel[0] = newGray;
+			pixel[1] = newGray;
+			pixel[2] = newGray;
+
+			img.at<Vec3b>(i, j) = pixel;
+		}
+	}
+
+	std::stringstream s;
+	s << cte;
+	std::string saida = "./NivelCinza" + s.str() + ".jpg";
+
+	imwrite(saida, img);
+	return 1;
+}
+
+int nivelCinzaInvertido() {
+	Mat img;
+	img = imread("./lena.jpg", CV_LOAD_IMAGE_COLOR);
+	if (!img.data) {
+		printf("No image data \n");
+		return -1;
+	}
+	for (int i = 0; i < img.rows; i++) {
+		for (int j = 0; j < img.cols; j++) {
+			Vec3b pixel = img.at<Vec3b>(i, j);
+			int r = pixel[2];
+			int g = pixel[1];
+			int b = pixel[0];
+			int gray = (r + g + b) / 3;
+			gray = 255 - gray;
+
+			pixel[0] = gray;
+			pixel[1] = gray;
+			pixel[2] = gray;
+
+			img.at<Vec3b>(i, j) = pixel;
+		}
+	}
+	imwrite("./nivelCinzaInvertido.jpg", img);
+	return 1;
+}
+
+int main() {
+	nivelCinzaInvertido();
+	nivelCinza();
+	for (int i = -200; i < 250; i = i + 50) {
+		nivelCinzaCte(i);
+	}
+	alterarLuminancia(50);
+	return 0;
+}

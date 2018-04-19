@@ -1,0 +1,24 @@
+/*
+ * Main.cpp
+ *
+ *  Created on: 17/04/2018
+ *      Author: gustavo
+ */
+
+
+#include <iostream>
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <string>
+#include <opencv2/imgproc/imgproc.hpp>
+using namespace cv;
+
+int zoomIn(){
+
+	return 1;
+}
+
+
+int main(){
+	return 1;
+}
